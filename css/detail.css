@@ -1,0 +1,97 @@
+
+* {
+   box-sizing: border-box;
+   background-color: whitesmoke;
+  }
+
+body {
+    font-family: "Poppins", sans-serif;
+    }
+
+.content {
+    display: flex;
+    align-items: stretch;
+    min-height: calc(100vh-160px);
+}
+main {
+    flex: 1;
+    padding: 24px;
+    }
+
+section {
+    margin-bottom: 24px;
+    }
+
+.project-header {
+    text-align: left;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-header h2 {
+    font-size: 32px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.project-header p {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.6;
+}
+
+.img-gallery {
+    max-width: 1200px;
+    margin: 0 -5px;
+}
+
+.img-wrapper {
+    break-inside: avoid; 
+    margin-bottom: 10px; 
+    padding: 5px;
+    position: relative;
+    margin-bottom: 20px;
+    flex-basis: 50%;
+    box-sizing: border-box;
+}
+
+.img-wrapper img {
+    width: 100%;
+    display: block;
+    box-shadow: 1px 1px 2px rgb(218 218 218);
+}
+
+
+
+@media (max-width: 576px) {
+    .inn-wrapper { padding: 0 20px; }
+    .img-wrapper { flex: 0 0 100%; }
+}
+
+/*
+Small Screen ≥ 576px
+============================================= */
+@media (min-width: 576px) {
+    .inn-wrapper { padding: 0 20px; }
+    .img-wrapper { flex: 0 0 100%; }
+}
+
+/*
+Medium Screen ≥ 768px
+============================================= */
+@media (min-width: 1000px) {
+    .inn-wrapper { padding: 0 60px; }
+    .img-wrapper { flex: 0 0 100%; }
+}
+
+/*
+Large Screen ≥ 992px
+============================================= */
+@media (min-width: 1500px) {
+    .img-gallery {
+        /* This cancels the 1200px limit, allowing the gallery to grow */
+        max-width: none; 
+    }
+}
